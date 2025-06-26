@@ -31,6 +31,10 @@ function nextPosition(current, dice) {
 function nextSnakePosition(current, dice)
 {
     const next = current + dice;
+    if (next >= 100) {
+        console.log("도착 지점 도착!") 
+        process.exit();
+    }   
     if (arr_snake[next] != 0)        {   return arr_snake[next];  }
 
     return nextPosition(current, dice);
