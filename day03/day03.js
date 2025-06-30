@@ -32,19 +32,22 @@ function find(param0, param1){
         if 
         (
             
+            (
                 (
-                    (
-                            (book.startYear < paramYear) 
-                                || 
-                            (book.startYear === paramYear && paramMonth <= book.endMonth))
-                    )
-                        && 
-                    (
-                            (paramYear < book.endYear) 
-                                || 
-                            ((book.endYear === paramYear && paramMonth <= book.endMonth) || (book.endYear === Infinity && book.endMonth === Infinity))
-                    )
+                    (book.startYear < paramYear) 
+                        || 
+                    (book.startYear === paramYear && paramMonth <= book.endMonth)
                 )
+            )
+                && 
+            (
+                (
+                    paramYear < book.endYear) 
+                        || 
+                    ((book.endYear === paramYear && paramMonth <= book.endMonth) || (book.endYear === Infinity && book.endMonth === Infinity)
+                )
+            )
+        )
 
         
         {
