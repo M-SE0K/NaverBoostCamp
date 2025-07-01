@@ -3,7 +3,7 @@ import { useState } from "./state.js";
 export class userInfo{
     #users = [
         {
-            "userI": 1,
+            "userID": 1,
             "password": 1111,
             "name": "호날두",
             "age": 40,
@@ -24,14 +24,14 @@ export class userInfo{
             "gender": "woman"
         },
         {
-            "userId": 7,
+            "userID": 7,
             "password": 7777,
             "name": "유재석",
             "age": 50,
             "gender": "male"
         },
         {
-            "userId": 9,
+            "userID": 9,
             "password": 9999,
             "name": "한효주",
             "age": 40,
@@ -40,7 +40,7 @@ export class userInfo{
     ];
     // ID로 사용자 객체 찾기
     findUserByID(id) {
-        return this.#users.find(user => user.userId === id);
+        return this.#users.find(user => user.userID === id);
     }
 
     // ID로 비밀번호 찾기

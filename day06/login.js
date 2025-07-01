@@ -32,7 +32,7 @@ function askQuestion(query) {
 export function loginCheck(userID){
     console.log("사용자의 로그인 상태를 검사합니다.");
     const db = new userInfo();
-
+    console.log(userID);
     if (db.findUserByID(userID)){
         console.log("[login.js] 로그인된 사용자입니다.");
     }
