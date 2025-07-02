@@ -11,8 +11,7 @@ const userInfo = [
   },
   {
     id: 2,
-    timeStamp: ["2025-07-01T10:30:00Z", "2025-07-01T15:00:00Z"
-],
+    timeStamp: ["2025-07-01T10:30:00Z", "2025-07-01T15:00:00Z"],
     views: [
       { view: "menu1", scroll: 0, from: "main", count: 1 },
       { view: "menu3", action1: "push", action2: "push", from: "menu2", "on/off": "off", count: 2 },

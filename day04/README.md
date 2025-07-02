@@ -209,7 +209,7 @@ put(key, value){
 
         if (this.bucket[index] === null) {
             console.log("삭제할 노드가 없습니다.");
-            return null;
+            return nul;
         }
         let node = this.bucket[index]; let idx = 0; let prev = idx;
         while(node !== null){
